@@ -1,0 +1,25 @@
+@use '../../styles/variables.scss' as var;
+@use '../../styles/mixins.scss';
+
+// .body {
+//   height: 100vh;
+//   width: 100%;
+//   overflow: hidden;
+// }
+
+.main {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  overflow: hidden;
+
+  @include mixins.mediaNoteBook {
+    height: calc(100%);
+  }
+}

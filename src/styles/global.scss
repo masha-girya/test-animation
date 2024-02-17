@@ -1,0 +1,50 @@
+@use './variables.scss' as var;
+
+@font-face {
+  font-family: 'GrtskGigaFont';
+  src: url(./GrtskGiga-Bold.ttf);
+  font-weight: 700px;
+}
+
+@font-face {
+  font-family: 'GrtskGigaFontMedium';
+  src: url(./GrtskGiga-Semibold.ttf);
+  font-weight: 500px;
+}
+
+body {
+  margin: 0;
+  font-family: 'GrtskGigaFont', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var.$color-back;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

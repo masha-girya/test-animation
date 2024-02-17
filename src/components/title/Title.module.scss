@@ -1,0 +1,45 @@
+@use 'src/styles/variables.scss' as var;
+@use 'src/styles/mixins.scss';
+
+.titleBlock {
+  @include mixins.absoluteCenter(var.$z-index-title);
+
+  height: max-content;
+  max-width: 1025px;
+
+  padding: 0 var.$title-padding;
+
+  @include mixins.mediaNoteBook {
+    padding: 0 var.$title-padding;
+  }
+
+  @include mixins.mediaMiniTablet {
+    padding: 0 21px;
+  }
+
+  &__title {
+    font-size: 82px;
+    line-height: 90px;
+    text-align: center;
+
+    user-select: none;
+    pointer-events: none;
+
+    color: var.$color-text;
+
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+
+    @include mixins.mediaNoteBook {
+      font-size: 58px;
+      line-height: 63px;
+    }
+
+    @include mixins.mediaMiniTablet {
+      max-width: 100%;
+
+      font-size: 34px;
+      line-height: 37px;
+    }
+  }
+}

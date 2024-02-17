@@ -1,0 +1,42 @@
+@use 'src/styles/variables.scss' as var;
+@use 'src/styles/mixins.scss';
+
+.circleBox {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+
+  @include mixins.mediaNoteBook {
+    width: 560px;
+    height: 560px;
+  }
+
+  @include mixins.mediaMiniTablet {
+    width: 100%;
+
+    padding: 0 14px;
+  }
+
+  &__circle {
+    @include mixins.absoluteCenter(var.$z-index-circle);
+
+    width: 100%;
+  }
+
+  &__showReel {
+    position: absolute;
+    z-index: var.$z-index-circle;
+    bottom: -20%;
+    right: 12%;
+
+    @include mixins.mediaNoteBook {
+      bottom: 60px;
+      right: 60px;
+    }
+
+    @include mixins.mediaMobile {
+      bottom: 20%;
+      right: 10%;
+    }
+  }
+}

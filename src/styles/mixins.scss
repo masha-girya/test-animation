@@ -1,0 +1,61 @@
+@use './variables.scss' as var;
+
+@mixin circle($px) {
+  width: $px;
+  height: $px;
+  border-radius: 50%;
+}
+
+@mixin absoluteCenter($z-index) {
+  position: absolute;
+  z-index: $z-index;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin mediaNoteBook {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mediaTablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaMiniTablet {
+  @media only screen and (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin mediaMobile {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin titleFont {
+  font-size: 82px;
+  line-height: 90px;
+  text-align: center;
+
+  color: var.$color-text;
+
+  @include mediaNoteBook {
+    font-size: 58px;
+    line-height: 63px;
+  }
+
+  @include mediaMiniTablet {
+    max-width: 100%;
+
+    font-size: 34px;
+    line-height: 37px;
+  }
+}
