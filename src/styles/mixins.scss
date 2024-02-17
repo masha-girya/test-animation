@@ -59,3 +59,13 @@
     line-height: 37px;
   }
 }
+
+@mixin iconsLang {
+  width: 38px;
+  height: 38px;
+
+  @include mediaMiniTablet {
+    width: 34px;
+    height: 34px;
+  }
+}

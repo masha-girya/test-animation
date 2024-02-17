@@ -4,9 +4,6 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-text: #373737;
 
-$header-height: 70px;
-$header-height-small: 50px;
-
 $sidelink-margin: 19px;
 $sidelink-margin-mob: 20px;
 $sidelink-line-height: 22px;
@@ -18,3 +15,4 @@ $title-padding-mob: calc($sidelink-margin-mob + $sidelink-line-height-mob);
 $z-index-back-text: 0;
 $z-index-circle: 1;
 $z-index-title: 2;
+$z-index-page-animation: 3;

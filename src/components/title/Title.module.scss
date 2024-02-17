@@ -2,10 +2,10 @@
 @use 'styles/mixins.scss';
 
 .titleBlock {
-  @include mixins.absoluteCenter(var.$z-index-title);
+  @include mixins.absoluteCenter(1);
 
   height: max-content;
-  max-width: 1025px;
+  max-width: 1150px;
 
   padding: 0 var.$title-padding;
 

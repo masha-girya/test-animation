@@ -2,11 +2,12 @@
 @use 'styles/variables.scss' as var;
 
 .routers {
-  &::after {
+  &::before {
     content: '';
-    @include mixins.absoluteCenter(var.$z-index-title);
+    @include mixins.absoluteCenter(var.$z-index-page-animation);
+    position: fixed;
     background-color: var.$color-back;
-    width: 110%;
+    width: 200%;
     height: 100%;
 
     transform: translateX(110%) skewX(0deg);
@@ -17,13 +18,13 @@
   }
 
   &_fadeIn {
-    &::after {
+    &::before {
       animation: 1s fadeIn forwards;
     }
   }
 
   &_fadeOut {
-    &::after {
+    &::before {
       animation: 0.7s fadeOut forwards;
     }
   }
