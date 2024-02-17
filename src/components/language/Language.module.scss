@@ -81,9 +81,11 @@
         transition: border-color 0.3s ease;
       }
 
-      &:hover {
-        &::after {
-          border-color: var.$color-yellow;
+      @include mixins.hover {
+        &:hover {
+          &::after {
+            border-color: var.$color-yellow;
+          }
         }
       }
 
