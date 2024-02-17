@@ -8,7 +8,7 @@ interface IProps {
 export const WhatWhoWhere = ({ text }: IProps) => {
   return (
     <main className={styles.main}>
-      <Title text={text} addStyle={styles.textWrapper} />
+      <Title text={text} />
     </main>
   );
 };

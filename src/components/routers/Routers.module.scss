@@ -11,9 +11,9 @@
 
     transform: translateX(110%) skewX(0deg);
 
-    -webkit-box-shadow: 0px 0px 37px -4px rgba(163,160,163,1);
-    -moz-box-shadow: 0px 0px 37px -4px rgba(163,160,163,1);
-    box-shadow: 0px 0px 37px -4px rgba(163,160,163,1);
+    -webkit-box-shadow: 0px 0px 37px -4px rgba(163, 160, 163, 1);
+    -moz-box-shadow: 0px 0px 37px -4px rgba(163, 160, 163, 1);
+    box-shadow: 0px 0px 37px -4px rgba(163, 160, 163, 1);
   }
 
   &_fadeIn {
@@ -24,7 +24,7 @@
 
   &_fadeOut {
     &::after {
-      animation: .7s fadeOut forwards;
+      animation: 0.7s fadeOut forwards;
     }
   }
 }

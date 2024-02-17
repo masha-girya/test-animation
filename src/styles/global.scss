@@ -19,6 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var.$color-back;
+
+  overflow-x: hidden;
 }
 
 h1,
