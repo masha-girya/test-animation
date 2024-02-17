@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Language } from '../language';
-import { LogoIcon } from '../icons';
-import { ROUTES } from '../../constants';
+import { Language, LogoIcon } from 'components';
+import { ROUTES } from 'app-constants';
 import styles from './Header.module.scss';
 
 export const Header = () => {

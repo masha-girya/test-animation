@@ -8,7 +8,7 @@ import {
   TRANSITION_STYLE,
   DEFAULT_STYLES,
   LANG_IMAGE_ALT,
-} from '../../constants';
+} from 'app-constants';
 import LanguageImage from './assets/LanguageImage.png';
 import styles from './Language.module.scss';
 

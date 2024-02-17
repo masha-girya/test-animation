@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { SIDE_LINK_MOCK } from '../../constants';
+import { SIDE_LINK_MOCK } from 'app-constants';
 import styles from './SideLinks.module.scss';
 
 export const SideLinks = () => {

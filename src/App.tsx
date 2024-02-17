@@ -1,4 +1,4 @@
-import { Header, SideLinks, Routers } from './components';
+import { Header, SideLinks, Routers } from 'components';
 
 const App = () => {
   return (

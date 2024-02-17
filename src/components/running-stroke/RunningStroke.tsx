@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Marquee } from '../../components/marquee';
-import { calculateDiagonal, calculateDiagonalAngle } from '../../helpers';
-import { MARQUEE } from '../../constants';
+import { Marquee } from 'components';
+import { calculateDiagonal, calculateDiagonalAngle } from 'helpers';
+import { MARQUEE } from 'app-constants';
 import styles from './RunningStroke.module.scss';
 
 export const RunningStroke = () => {
