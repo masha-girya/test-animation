@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { ShowReelIcon } from '../icons';
+import { ShowReelIcon } from 'components';
 import styles from './ShowReel.module.scss';
 
 export const ShowReel = () => {

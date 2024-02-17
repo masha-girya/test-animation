@@ -1,5 +1,4 @@
-import { CircleIcon } from '../icons';
-import { ShowReel } from '../showreel';
+import { CircleIcon, ShowReel } from 'components';
 import styles from './CirclesBox.module.scss';
 
 export const CircleBox = () => {

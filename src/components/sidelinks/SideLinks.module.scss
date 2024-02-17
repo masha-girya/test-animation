@@ -1,5 +1,5 @@
-@use 'src/styles/mixins.scss';
-@use 'src/styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+@use 'styles/variables.scss' as var;
 
 .sideLinks {
   @include mixins.absoluteCenter(var.$z-index-title);
@@ -16,10 +16,6 @@
 
   @include mixins.mediaNoteBook {
     left: var.$sidelink-margin-mob;
-  }
-
-  @include mixins.mediaMiniTablet {
-    display: none;
   }
 
   &_Who {
@@ -46,6 +42,24 @@
     }
   }
 
+  @include mixins.mediaMiniTablet {
+    display: none;
+
+    &_mobNav {
+      display: flex;
+      @include mixins.absoluteCenter(var.$z-index-title);
+      transform: rotate(0);
+
+      &_Who {
+        transform: translateY(100px);
+      }
+
+      &_What {
+        transform: translateY(-100px);
+      }
+    }
+  }
+
   &__link {
     position: relative;
 
@@ -63,6 +77,10 @@
     @include mixins.mediaNoteBook {
       font-size: 14px;
       line-height: var.$sidelink-line-height-mob;
+    }
+
+    @include mixins.mediaMiniTablet {
+      font-size: 30px;
     }
 
     &::after {

@@ -12,6 +12,10 @@
   font-weight: 500px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'GrtskGigaFont', sans-serif;
@@ -19,6 +23,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var.$color-back;
+
+  overflow-x: hidden;
 }
 
 h1,

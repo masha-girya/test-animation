@@ -1,0 +1,30 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.burger {
+  display: none;
+
+  flex-direction: column;
+  gap: 8px;
+
+  @include mixins.mediaMiniTablet {
+    display: flex;
+  }
+
+  &__icon {
+    width: 22px;
+    height: 1px;
+
+    background-color: #000;
+
+    transition: transform 0.3s ease;
+
+    &_open {
+      transform: rotate(45deg) translateY(6px);
+
+      &:last-of-type {
+        transform: rotate(-45deg) translateY(-6px);
+      }
+    }
+  }
+}

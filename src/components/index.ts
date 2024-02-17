@@ -1,3 +1,4 @@
+export * from './burger-menu';
 export * from './circles-box';
 export * from './header';
 export * from './icons';

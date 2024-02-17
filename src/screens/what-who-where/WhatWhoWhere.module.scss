@@ -1,5 +1,5 @@
-@use '../../styles/variables.scss' as var;
-@use '../../styles/mixins.scss';
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
 
 .main {
   position: relative;
@@ -11,8 +11,4 @@
   overflow: hidden;
 
   height: 100vh;
-}
-
-.textWrapper {
-  // max-width: max-content;
 }

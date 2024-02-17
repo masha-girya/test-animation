@@ -1,5 +1,5 @@
-import { RunningStroke, Title, CircleBox } from '../../components';
-import { TITLE } from '../../constants';
+import { RunningStroke, Title, CircleBox } from 'components';
+import { TITLE } from 'app-constants';
 import styles from './Home.module.scss';
 
 export const Home = () => {
