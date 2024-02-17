@@ -1,5 +1,6 @@
 {
   "name": "test-animation",
+  "homepage": "https://masha-girya.github.io/test-animation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,13 +26,16 @@
     "@types/react-transition-group": "^4.4.10",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.1.3"
+    "eslint-plugin-prettier": "^5.1.3",
+    "gh-pages": "^6.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

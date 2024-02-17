@@ -97,11 +97,13 @@
       transition: width 0.4s ease;
     }
 
-    &:hover {
-      color: var.$color-white;
+    @include mixins.hover {
+      &:hover {
+        color: var.$color-white;
 
-      &::after {
-        width: 100%;
+        &::after {
+          width: 100%;
+        }
       }
     }
   }

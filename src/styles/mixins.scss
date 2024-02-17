@@ -69,3 +69,9 @@
     height: 34px;
   }
 }
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
