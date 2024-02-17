@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import { Transition } from 'react-transition-group';
 
 export const Header = () => {
-  const ref = useRef<null | any>(null);
+  const nodeRef = useRef<null | any>(null);
   const [isMenuOnShow, setIsMenuOnShow] = useState(false);
   const { pathname } = useLocation();
 
@@ -24,7 +24,7 @@ export const Header = () => {
   const TRANSITION_STYLE: any = {
     entering: { opacity: 1, zIndex: 2 },
     entered: { opacity: 1, zIndex: 2 },
-    exiting: { opacity: 0, zIndex: 0 },
+    exiting: { opacity: 0, zIndex: 2 },
     exited: { opacity: 0, zIndex: 0 },
   };
 
@@ -52,10 +52,10 @@ export const Header = () => {
         </div>
       </header>
 
-      <Transition in={isMenuOnShow} timeout={300} ref={ref}>
+      <Transition in={isMenuOnShow} timeout={300} ref={nodeRef}>
         {(state) => (
           <div
-            ref={ref}
+            ref={nodeRef}
             style={{ ...DEFAULT_STYLES, ...TRANSITION_STYLE[state] }}
             className={styles.mobNav}
           >
