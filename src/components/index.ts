@@ -4,6 +4,7 @@ export * from './header';
 export * from './icons';
 export * from './language';
 export * from './marquee';
+export * from './mob-nav';
 export * from './routers';
 export * from './running-stroke';
 export * from './showreel';

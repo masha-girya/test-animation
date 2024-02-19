@@ -4,10 +4,10 @@ import { Transition } from 'react-transition-group';
 import {
   LANGS,
   ANIMATION_DELAY,
-  ANIMATION_DURATION,
-  TRANSITION_STYLE,
-  DEFAULT_STYLES,
-  LANG_IMAGE_ALT,
+  ANIMATION_DURATION_LANG,
+  TRANSITION_STYLE_LANG,
+  DEFAULT_STYLES_LANG,
+  ALT_TEXT,
 } from 'app-constants';
 import LanguageImage from './assets/LanguageImage.png';
 import styles from './Language.module.scss';
@@ -37,7 +37,7 @@ export const Language = () => {
         className={classNames(styles.lang__openIcon, {
           [styles.lang__openIcon_hover]: isLangOnShow,
         })}
-        alt={LANG_IMAGE_ALT}
+        alt={ALT_TEXT.langIcon}
       />
       <ul className={styles.lang__list}>
         {LANGS.map((lang, index) => (
@@ -45,15 +45,15 @@ export const Language = () => {
             key={lang}
             nodeRef={nodeRef}
             in={isLangOnShow}
-            timeout={ANIMATION_DURATION}
+            timeout={ANIMATION_DURATION_LANG}
           >
             {(state) => (
               <li
                 ref={nodeRef}
                 className={styles.lang__list__item}
                 style={{
-                  ...DEFAULT_STYLES,
-                  ...TRANSITION_STYLE[state],
+                  ...DEFAULT_STYLES_LANG,
+                  ...TRANSITION_STYLE_LANG[state],
                   transitionDelay: isLangOnShow
                     ? `${ANIMATION_DELAY * index}ms`
                     : `-${ANIMATION_DELAY * index}ms`,

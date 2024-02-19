@@ -23,10 +23,6 @@
     display: block;
   }
 
-  &_open {
-    background-color: var.$color-back;
-  }
-
   &__box {
     position: relative;
 
@@ -69,18 +65,5 @@
     @include mixins.mediaMiniTablet {
       width: 45px;
     }
-  }
-}
-
-.mobNav {
-  display: none;
-  @include mixins.absoluteCenter(var.$z-index-title);
-
-  margin-top: 50px;
-
-  background-color: var.$color-back;
-
-  @include mixins.mediaMiniTablet {
-    display: block;
   }
 }
