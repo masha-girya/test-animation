@@ -9,6 +9,7 @@ import {
   TRANSITION_STYLE_MOB_MENU,
 } from 'app-constants';
 import styles from './MobNav.module.scss';
+import classNames from 'classnames';
 
 export const MobNav = () => {
   const nodeRef = useRef<null | any>(null);
@@ -40,7 +41,7 @@ export const MobNav = () => {
               ...DEFAULT_STYLES_MOB_MENU,
               ...TRANSITION_STYLE_MOB_MENU[state],
             }}
-            className={styles.mobNav}
+            className={classNames(styles.mobNav, {[styles.mobNav_open]: isMenuOnShow})}
           >
             <SideLinks isMobNav />
           </div>

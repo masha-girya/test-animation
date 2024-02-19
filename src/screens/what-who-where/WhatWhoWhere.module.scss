@@ -2,14 +2,5 @@
 @use 'styles/mixins.scss';
 
 .main {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
-
-  height: 100vh;
-  min-height: -webkit-fill-available;
+  @include mixins.mainBox();
 }

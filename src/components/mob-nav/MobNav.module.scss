@@ -15,4 +15,10 @@
   @include mixins.mediaMiniTablet {
     display: block;
   }
+
+  pointer-events: none;
+
+  &_open {
+    pointer-events: all;
+  }
 }
