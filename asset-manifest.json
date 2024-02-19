@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test-animation/static/css/main.8b06d0f9.css",
+    "main.css": "/test-animation/static/css/main.1df024de.css",
     "main.js": "/test-animation/static/js/main.a89705f5.js",
     "static/media/GrtskGiga-Semibold.ttf": "/test-animation/static/media/GrtskGiga-Semibold.4da3a44fbddc51cf8383.ttf",
     "static/media/GrtskGiga-Bold.ttf": "/test-animation/static/media/GrtskGiga-Bold.d2220bc69306b8646559.ttf",
     "index.html": "/test-animation/index.html",
-    "main.8b06d0f9.css.map": "/test-animation/static/css/main.8b06d0f9.css.map",
+    "main.1df024de.css.map": "/test-animation/static/css/main.1df024de.css.map",
     "main.a89705f5.js.map": "/test-animation/static/js/main.a89705f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b06d0f9.css",
+    "static/css/main.1df024de.css",
     "static/js/main.a89705f5.js"
   ]
 }
