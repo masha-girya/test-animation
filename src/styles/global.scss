@@ -24,7 +24,14 @@ body {
 
   background-color: var.$color-back;
 
+  width: 100%;
   overflow: hidden;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 h1,
