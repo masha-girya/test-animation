@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { ALT_TEXT } from 'app-constants';
 import styles from './BurgerMenu.module.scss';
 
 interface IProps {
@@ -6,11 +7,13 @@ interface IProps {
   isOpen: boolean;
 }
 
-export const BurgerMenu = ({ handleClickMenu, isOpen }: IProps) => {
+export const BurgerMenu = (props: IProps) => {
+  const { handleClickMenu, isOpen } = props;
+
   return (
     <button
       type="button"
-      aria-label="Open Menu"
+      aria-label={ALT_TEXT.buttonBurger}
       className={styles.burger}
       onClick={handleClickMenu}
     >
